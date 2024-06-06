@@ -1,0 +1,32 @@
+{
+  "name": "hmpl-loader",
+  "version": "0.0.1",
+  "description": "hmpl loader for webpack",
+  "main": "index.js",
+  "scripts": {},
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmpljs/hmpl-loader"
+  },
+  "bugs": {
+    "url": "https://github.com/hmpljs/hmpl-loader/issues"
+  },
+  "homepage": "https://hmpljs.github.io",
+  "keywords": [
+    "hmpl",
+    "hmpl-js",
+    "loader",
+    "webpack",
+    "webpack-loader"
+  ],
+  "author": "Anton Maklakov",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.12.0"
+  }
+}
