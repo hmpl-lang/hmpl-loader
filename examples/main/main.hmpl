@@ -1,1 +1,7 @@
-<div><request src="/api/test"></request></div>
+<div>
+  {
+    {
+      "src":"/api/test"
+    }
+  }
+</div>

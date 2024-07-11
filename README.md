@@ -15,25 +15,34 @@ module.exports = {
       {
         test: /\.hmpl$/i,
         use: ["hmpl-loader"],
-      }
-    ]
-  }
-}
+      },
+    ],
+  },
+};
 ```
 
 After `webpack.config.js` has been changed, in js files (for example, in `main.js`), you can import a file with the `.hmpl` extension and receive a [template function](https://hmpljs.github.io/#/?id=compile) in response.
 
 ### main.hmpl
+
 ```hmpl
-<div><request src="/api/test"></request></div>
+<div>
+  {
+    {
+      "src":"/api/test"
+    }
+  }
+</div>
 ```
 
 ### main.js
+
 ```javascript
 const templateFn = require("./main.hmpl");
 
 const elementObj = templateFn();
 ```
+
 ## Changelog
 
 [Changelog](https://github.com/hmpljs/hmpl-loader/releases)
