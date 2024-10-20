@@ -1,5 +1,7 @@
 # hmpl-loader
 
+[![npm-version](https://img.shields.io/npm/v/hmpl-loader?logo=npm&color=0183ff)](https://www.npmjs.com/package/hmpl-js)
+
 This loader was created for files with the `.hmpl` extension, which are converted using the [hmpl-js](https://github.com/hmpljs/hmpl) package. This loader is designed for webpack.
 
 > Loader works with hmpl-js version 1.0.4 or higher
@@ -42,6 +44,33 @@ const templateFn = require("./main.hmpl");
 
 const elementObj = templateFn();
 ```
+
+## Options
+
+The loader supports the compile function options.
+
+```javascript
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.hmpl$/i,
+        use: {
+          loader: "hmpl-loader",
+          options: {
+            memo: true,
+            autoBody: {
+              formData: true,
+            },
+          },
+        },
+      },
+    ],
+  },
+};
+```
+
+The list of options is described in the documentation [here](https://hmpl-lang.github.io/hmpl.html#options).
 
 ## Changelog
 
