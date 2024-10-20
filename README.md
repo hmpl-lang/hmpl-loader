@@ -1,10 +1,16 @@
 # hmpl-loader
 
-[![npm-version](https://img.shields.io/npm/v/hmpl-loader?logo=npm&color=0183ff)](https://www.npmjs.com/package/hmpl-loader)
+[![npm-version](https://img.shields.io/npm/v/hmpl-loader?logo=npm&color=fff)](https://www.npmjs.com/package/hmpl-loader)
 
 This loader was created for files with the `.hmpl` extension, which are converted using the [hmpl-js](https://github.com/hmpljs/hmpl) package. This loader is designed for webpack.
 
 > Loader works with hmpl-js version 1.0.4 or higher
+
+## Installation
+
+```bash
+npm i hmpl-loader
+```
 
 ## Usage:
 
